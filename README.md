@@ -1,6 +1,8 @@
 go-telegram-widget
 ==================
 
+[![GoDoc](https://godoc.org/github.com/wesleym/telegramwidget?status.svg)](https://godoc.org/github.com/wesleym/telegramwidget)
+
 This is not an officially supported Google product.
 
 go-telegram-widget simplifies the process of interacting with the [Telegram
