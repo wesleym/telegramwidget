@@ -1,6 +1,8 @@
 go-telegram-widget
 ==================
 
+[![Build Status](https://travis-ci.com/wesleym/telegramwidget.svg?branch=master)](https://travis-ci.com/wesleym/telegramwidget)
+
 This is not an officially supported Google product.
 
 go-telegram-widget simplifies the process of interacting with the [Telegram
