@@ -2,6 +2,7 @@ go-telegram-widget
 ==================
 
 [![GoDoc](https://godoc.org/github.com/wesleym/telegramwidget?status.svg)](https://godoc.org/github.com/wesleym/telegramwidget)
+[![Build Status](https://travis-ci.com/wesleym/telegramwidget.svg?branch=master)](https://travis-ci.com/wesleym/telegramwidget)
 
 This is not an officially supported Google product.
 
