@@ -19,12 +19,17 @@ import (
 	"time"
 )
 
-// A User is a Telegram user. All of the data returned from the Telegram login widget is represented in this type.
+// A User is a Telegram user. All of the data returned from the Telegram login
+// widget is represented in this type.
 type User struct {
-	AuthDate  time.Time
-	FirstName string
-	ID        int64
-	LastName  string
-	PhotoURL  *url.URL
-	Username  string
+	AuthDate     time.Time
+	FirstName    string
+	HasFirstName bool
+	ID           int64
+	LastName     string
+	HasLastName  bool
+	PhotoURL     *url.URL
+	HasPhotoURL  bool
+	Username     string
+	HasUsername  bool
 }

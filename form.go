@@ -66,18 +66,22 @@ func parseUserFromForm(f url.Values) (User, []pair, []byte, error) {
 		case "first_name":
 			ps = append(ps, pair{"first_name", v})
 			tu.FirstName = v
+			tu.HasFirstName = true
 		case "last_name":
 			ps = append(ps, pair{"last_name", v})
 			tu.LastName = v
+			tu.HasLastName = true
 		case "username":
 			ps = append(ps, pair{"username", v})
 			tu.Username = v
+			tu.HasUsername = true
 		case "photo_url":
 			ps = append(ps, pair{"photo_url", v})
 			var err error
 			if tu.PhotoURL, err = url.Parse(v); err != nil {
 				return tu, nil, expectedMAC, err
 			}
+			tu.HasPhotoURL = true
 		case "auth_date":
 			ps = append(ps, pair{"auth_date", v})
 			// Fractional seconds are lost by this conversion.
