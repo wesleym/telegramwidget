@@ -84,20 +84,24 @@ func parseUserFromJSON(r io.Reader) (User, []pair, []byte, error) {
 			firstName := v.(string)
 			ps = append(ps, pair{"first_name", firstName})
 			tu.FirstName = firstName
+			tu.HasFirstName = true
 		case "last_name":
 			lastName := v.(string)
 			ps = append(ps, pair{"last_name", lastName})
 			tu.LastName = lastName
+			tu.HasLastName = true
 		case "username":
 			username := v.(string)
 			ps = append(ps, pair{"username", username})
 			tu.Username = username
+			tu.HasUsername = true
 		case "photo_url":
 			photoURL := v.(string)
 			ps = append(ps, pair{"photo_url", photoURL})
 			if tu.PhotoURL, err = url.Parse(photoURL); err != nil {
 				return tu, nil, expectedMAC, err
 			}
+			tu.HasPhotoURL = true
 		case "auth_date":
 			authDate := v.(json.Number)
 			ps = append(ps, pair{"auth_date", authDate.String()})
