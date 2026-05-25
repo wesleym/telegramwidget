@@ -6,6 +6,18 @@ go-telegram-widget
 
 This is not an officially supported Google product.
 
+Deprecation
+-----------
+
+The [Telegram Login Widget](https://core.telegram.org/widgets/login-legacy) has been deprecated. The updated documentation refers to the login widget as the ["legacy iframe-based JavaScript widget"](https://core.telegram.org/bots/telegram-login#benefits-of-telegram-login).
+
+go-telegram-widget doesn't provide any relevant functionality for Log In With Telegram. Use a library that verifies the signature of JSON Web Tokens (JWTs) instead.
+
+go-telegram-widget remains available for users of the Telegram Login Widget. However, no further updates to this library are planned.
+
+About go-telegram-widget
+------------------------
+
 go-telegram-widget simplifies the process of interacting with the [Telegram
 login widget](https://core.telegram.org/widgets/login). This library provides
 a data type for expressing a Telegram user. It also provides utilities for
